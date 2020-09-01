@@ -1,183 +1,218 @@
-body{
+*{
 	margin: 0;
 	padding: 0;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
-#All{
-	width: 1000px;
+html{
+	scroll-behavior: smooth;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: black;
+}
+#container{
+	width: 100%;
 	height: auto;
-	margin: 0 auto 0 auto;
+	margin: 0 auto;
 }
-#Header{
-	width: 1000px;
+#header{
+	width: 100%;
 	height: 80px;
-	position: fixed;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0px 20px;
+    box-sizing: border-box;
+    background: white;
+    position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#Social{
-	height: 30px;
-	background: #1d4c82;
+#top-header{
+	width: 100%;
+    height: 20px;
 }
-#Social ul{
-	list-style: none;
-	margin: 0;
+#top-header ul{
+    list-style: none;
 }
-#Social ul li{
-	float: right;
-	padding-top: 5px; 
-	margin-right: 5px;
+#top-header ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    float: right;
+    margin-right: 25px;
+    line-height: 20px;
 }
-#Social ul li a img{
-	height: 30px;
+#top-header a:hover{
+    color: #5D5D5D;
+    transition-duration: 0.2s;
+}
+#top-header ul li .language:hover{
+    color: black;
+    text-decoration: underline;
+}
+#logo{
+    width: 15%;
+    height: 60px;
+    float: left;
+}
+#logo img{
+    height: 45px;
+    padding-top: 7.5px;
+	animation-name: cay;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes cay{
+0% {
+	transform: translateX(0px);
+}
+50% {
+	transform: translateX(5px);
+	}
+100% {
+	transform: translateX(0px);
+}
 }
 #menu{
-	height: 50px;
-	background: #1d4c82;
-}
-#Logo{
-	width: 385px;
-	height: 50px;
-	background: #1d4c82;
-	float: left;
-}
-#menu #Logo a img{
-	height: 50px;
+    width: 85%;
+    height: 60px;
+    float: left;
 }
 #menu ul{
-	list-style: none;
-	margin: 0;
-	padding: 14px;
+    list-style: none;
+    text-align: center;
 }
 #menu ul li{
-	font-size: 15px;
-	float: left;
-	margin-right: 40px;
+    display: inline-table;
+    width: 120px;
+    height: 60px;
+    line-height: 60px;
+    position: relative;
 }
 #menu ul li a{
-	text-decoration: none;
-	color: white;
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    border-radius: 5px;
 }
 #menu ul li a:hover{
-	transition: 0.2s;
-	color: #ffb600;
+    transition-duration: 0.2s;
+    background: black;
+    color: white;
 }
-.content{
-	height: 1165px;
+#menu ul li> #search{
+    width: 60px;
 }
-.content .Header{
-	height: 100px;
+#menu ul li > #search:hover{
+    color: #5D5D5D;
+    background: none;
 }
-.content-main{
-	height: 490px;
-	text-align: center;
+#menu ul li > .menu-con{
+    background: white;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
 }
-.content-main img{
-	text-align: center;
-	width: 800px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+#menu ul li:hover .menu-con{
+    display: block;
 }
-#Box{
-	width: 1000px;
-	height: 430px;
-	background: #ffb600;
-	margin: 0 auto;
-	padding-top: 75px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	border-bottom-right-radius: 50px;
-	border-top-left-radius: 50px;
-	border-bottom-left-radius: 50px;
-	border-top-right-radius: 50px;
+#content{
+    width: 100%;
+    height: auto;
+    background: #FFCA87;
+    padding-top: 80px;
 }
-#Trong1{
-	width: 600px;
-	height: 166px;
-	margin: 0 auto;
+.bg-parallax-1{
+	width: 100%;
+	height: 100vh;
+	background: url("img/2132x998.jpg.jpg");
+	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+	background-size: cover;
 }
-#Trong2{
-	width: 432px;
-	height: 166px;
-	margin: 0 auto;
+.bg-parallax-2{
+	width: 100%;
+	height: 100vh;
+	background: url("img/resize-Banner-No.1-Isaac-02.jpg.jpg");
+	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+	background-size: cover;
 }
-.A{
-	width: 166px;
-	height: 166px;
-	background: white;
-	margin-left: 25px;
-	float: left;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	border-bottom-right-radius: 50px;
-	border-top-left-radius: 50px;
+#footer{
+    width: 100%;
+    height: auto;
+    background: black;
 }
-.A h1{
-	font-size: 25px;
-	margin-top: 60px;
+form{
+    padding-top: 15px;
 }
-.A2{
-	width: 166px;
-	height: 166px;
-	background: white;
-	margin-left: 25px;
-	margin-top: 25px;
-	float: left;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	border-bottom-right-radius: 50px;
-	border-top-left-radius: 50px;
+table, td{
+    padding-left: 20px;
+    border: none;
+    border-collapse: collapse;
+    height: 25px;
+    color: white;
+    font-size: 14px;
 }
-.A2 h1{
-	font-size: 25px;
-	margin-top: 60px;
+.TieuDe{
+    font-weight: bold;
+    font-size: 15px;
 }
-.content-main #Gui-mail{
-	width: 1000px;
-	height: 200px;
-	margin-top: 15px;
+.BQ-footer{
+	padding: 15px 0px;
 }
-.content-main #Gui-mail h1{
-	font-size: 20px; 
-}
-.footer{
-	height: 95px;
-	background: #1d4c82;
-}
-.footer>p{
+#footer p{
 	color: white;
-	text-align: center;
 	font-size: 12px;
+	text-align: center;
 }
-.footer>.ft-menu{
-	height: 30px;
+#myBtn{
+    width: 40px;
+    height: 40px;
+    color: black;
+    font-size: 20px;
+    background: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    z-index: 100;
 }
-.footer>.ft-menu>ul{
+#myBtn:hover{
+    color: white;
+    background: black;
+    transition-duration: 0.1s;
+}
+.sticky-social-1{
+	width: 35px;
+	height: 35px;
+	background: #D72E31;
+	position: fixed;
+	top: 150px;
+	left: 0px;
+}
+.sticky-social-1 a{
 	color: white;
-	margin:0;
-	padding-top: 10px;
-	list-style: none;
-	margin-left: 164px;
+	font-size: 25px;
+	margin-left: 9px;
+    line-height: 35px;
 }
-.footer>.ft-menu>ul>li>a{
-	margin-right: 50px;
-	text-decoration: none;
-	color: white;
-	float: left;
+.sticky-social-2{
+	width: 35px;
+	height: 35px;
+	background: white;
+	position: fixed;
+	top: 195px;
+	left: 0px;
 }
-.footer>.ft-menu>ul>li>a:hover{
-	transition: 0.2s;
-	color: #ffb600;
-}
-#Social-Footer{
-	height: 28px;
-	background: #1d4c82;
-}
-#Social-Footer ul{
-	list-style: none;
-	margin: 0;
-	padding-right: 455px;
-	padding-top: 6px;
-}
-#Social-Footer ul li{
-	float: right;
-	margin-right: 5px;
-}
-#Social-Footer ul li a img{
-	height: 25px;
+.sticky-social-2 a{
+	color: red;
+	font-size: 25px;
+	margin-left: 6px;
+    line-height: 35px;
 }
